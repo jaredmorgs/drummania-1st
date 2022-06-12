@@ -1,0 +1,31 @@
+#TITLE: Holiday
+
+#L1LABEL: BASIC
+#L1FILE: bas.dtx
+
+#L2LABEL: ADVANCED
+#L2FILE: adv.dtx
+
+#TITLE: Holiday [Twin Guitar]
+
+#L1LABEL: BASIC
+#L1FILE: bas_1P_2P.dtx
+
+#L2LABEL: ADVANCED
+#L2FILE: adv_1P_2P.dtx
+
+#TITLE: Holiday [HIGH SPEED EDITION]
+
+#L4LABEL: HSE
+#L4FILE: hse.dtx
+
+#L5LABEL: HSE_EXTREME
+#L5FILE: hse_ext.dtx
+
+#TITLE: Holiday [HSE Twin Guitar]
+
+#L4LABEL: HSE
+#L4FILE: hse_1P_2P.dtx
+
+#L5LABEL: HSE_EXTREME
+#L5FILE: hse_ext_1P_2P.dtx

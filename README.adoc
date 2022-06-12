@@ -1,0 +1,67 @@
+= Drummania 1st Mix Classic Charts
+
+This simfile collection was originally hosted by **APPROVED** and featured many tracks not converted over from this version of drummaina. 
+
+== Why duplicate the collection?
+
+The original BGM tracks in **APPROVED**'s collection were extracted from the original game and have a very specifific audio codec that no commercially-available conversion software supports today.
+
+If you attempted to load any audio file in Windows Explorer the file would crash the program. 
+DTXMania would also crash upon loading simfiles referencing these audio tracks.
+
+There is a longer explanation, but the short version is that the files were an Ogg Vorbis 1 stream (`.ogg`) encapsulated in a WAVE Audio (`.wav`) container. 
+The original files were meant to be decoded by the 573 System board that ran the drummania games up to 10th mix (before the game switched over to Bemani PC).
+The system was quite similar to a Playstation 2, and therefore used used a Playstation 2 MPEG2 decoder chip to manage audio streaming.
+This chip and underlying architecture was able to decode and stream this audio format.
+
+== What is in this repository?
+
+The simfiles in this collection consist of drum and guitar patterns however the intent of the simfiles is to offer drum play only.
+
+There are currently no background music tracks.
+The hope of creating this repository is that folks who have archives of good BGM tracks will edit the files and replace the BGM tracks so the songs play as originally intended.
+
+== How do I load these tracks in DTXMania?
+
+You create a nested folder structure in the `DTXFiles` directory of DTXMania's installed location.
+
+. Create a folder named `DTXFiles.drummania 1st Mix` (or a name of your choosing with the `DTXFiles.` prefix).
+. Check out this repository to your PC and then transfer the sub-directories over into this folder.
+
+NOTE: If you don't want to deal with Git and you just want the files, you can create a zip archive of the repository and download that.
+
+== Fix BGM tracks
+
+If you have BGM tracks for these files the community would welcome your contribution.
+
+You can open the `.dtx` files in any text editor to make small changes. 
+However, the DTXMania community strongly recommends using the DTXCreator software shipped with each DTXMania version to edit simfiles.
+
+The way you edit simfiles can be a bit tricky to understand at first.
+Read https://www.instructables.com/Create-a-DTXMania-Simfile/[this Instructibles post] for a basic introduction of how the editor works. 
+All simfiles are written in an extended version of the http://www.charatsoft.com/develop/otogema/page/04bms/bms.htm[BMS format] (page in Japanese but can be translated to English).
+
+Each `.dtx` file has the BGM part of the file commented out.
+The line in the file looks similar to `; WAVZZ bgm_dg.wav` in most cases. 
+The `dg` suffix referred to BGM tracks that excluded the drum (`d`) and guitar (`g`) sounds so that you didn't get doubling of the chip sounds.
+You may also see `bgm_d.wav` references which is just drum-only sounds removed. 
+
+If you want to attempt to re-add the BGM track to this file, the community recommends the following:
+
+* Try to offer sources in `.ogg` format. 
+
+* If this is not possible, `.mp3` files are supported (something is better than nothing).
+
+* Open the `.dtx` file in any text editor and uncomment the `; WAVZZ bgm_nn.wav` by removing the `;<SPACE>` preceding the line. 
+Doing this will allow you to edit the simfile BGM source within DTXCreator.
+
+* Test locally on one file and once you have lined up the audio as best you can, apply this to all `.dtx` files in the directory.
+
+* Create a merge request and your changes will be reviewed and merged in.
+
+Thanks for your help!
+
+== Get assistance
+
+If you find an issue with any of the simfiles in this collection, please open an issue in the repository documenting the issue with as much information as you can.
+A merge request is always welcome with a filed issue, however this is not always possible.

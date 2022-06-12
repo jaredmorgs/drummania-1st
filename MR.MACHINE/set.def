@@ -1,0 +1,21 @@
+#TITLE: MR.MACHINE
+
+#L1LABEL: Basic
+#L1FILE: bas.dtx
+
+#L2LABEL: Advanced
+#L2FILE: adv.dtx
+
+#L3LABEL: Extreme
+#L3FILE: ext.dtx
+
+#TITLE: MR.MACHINE (Dual guitar)
+
+#L1LABEL: Basic
+#L1FILE: bas_duo.dtx
+
+#L2LABEL: Advanced
+#L2FILE: adv_duo.dtx
+
+#L3LABEL: Extreme
+#L3FILE: ext_duo.dtx
